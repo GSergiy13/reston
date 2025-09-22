@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+import { CustomList } from '@/ui/customlist/customlist'
+
 import { BenefitsData } from './benefits.data'
 
 import style from './style.module.scss'
@@ -18,23 +20,7 @@ export const Benefits = () => {
 						/>
 					</div>
 
-					<ul className={style.benefits__list}>
-						{BenefitsData.map(benefit => (
-							<li
-								key={benefit.id}
-								className={style.benefits__item}
-							>
-								<Image
-									src={benefit.icon}
-									width={24}
-									height={24}
-									alt='benefits list icon'
-								/>
-
-								<span>{benefit.text}</span>
-							</li>
-						))}
-					</ul>
+					{BenefitsData && <CustomList items={BenefitsData} />}
 				</div>
 			</div>
 		</section>

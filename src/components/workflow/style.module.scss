@@ -1,0 +1,124 @@
+.workflow {
+	padding: 70px 0;
+
+	@media screen and (max-width: 992px) {
+		padding: 50px 0;
+	}
+
+	&__title {
+		margin-bottom: 70px;
+		max-width: inherit;
+		text-align: left;
+
+		@media screen and (max-width: 992px) {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__steps {
+		position: relative;
+		display: flex;
+		gap: 30px;
+		flex-direction: column;
+		padding-left: 90px;
+		margin-bottom: 74px;
+
+		@media screen and (max-width: 992px) {
+			padding-left: 50px;
+			margin-bottom: 50px;
+		}
+
+		@media screen and (max-width: 568px) {
+			padding-left: 0;
+			gap: 10px;
+			margin-bottom: 30px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 3px;
+			background: #74c947;
+
+			@media screen and (max-width: 568px) {
+				display: none;
+			}
+		}
+	}
+
+	.step {
+		position: relative;
+		border-radius: 10px;
+		background: #e7efff;
+		box-shadow: 0 10px 32px -4px rgba(24, 39, 75, 0.05);
+		padding: 15px 10px;
+		color: #172849;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: calc(-90px + 3px / 2 - 25px / 2);
+			top: 18px;
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			background: #74c947;
+
+			@media screen and (max-width: 992px) {
+				left: calc(-50px + 3px / 2 - 20px / 2);
+				width: 20px;
+				height: 20px;
+			}
+		}
+
+		&__number {
+			font-size: 20px;
+			line-height: 150%;
+
+			@media screen and (max-width: 992px) {
+				font-size: 18px;
+			}
+		}
+
+		&__title {
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 125%;
+			margin-bottom: 12px;
+
+			@media screen and (max-width: 992px) {
+				font-size: 20px;
+			}
+		}
+
+		&__description {
+			margin-bottom: 14px;
+
+			@media screen and (max-width: 568px) {
+				font-size: 14px;
+				margin-bottom: 11px;
+			}
+		}
+	}
+
+	&__description {
+		color: #172849;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 125%;
+		text-align: center;
+
+		@media screen and (max-width: 992px) {
+			font-size: 20px;
+			text-align: left;
+		}
+
+		span {
+			display: block;
+			color: #74c947;
+		}
+	}
+}

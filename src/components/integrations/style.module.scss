@@ -1,0 +1,63 @@
+.integrations {
+	padding: 70px 0;
+
+	&__title {
+		max-width: inherit;
+		text-align: left;
+		margin-bottom: 44px;
+	}
+
+	&__inner {
+		display: flex;
+		gap: 20px;
+		flex-direction: column;
+	}
+
+	&__row {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__item {
+		flex: 1;
+		border-radius: 10px;
+		padding: 20px;
+		background: #f3f8ff;
+		box-shadow: 0 10px 32px -4px rgba(24, 39, 75, 0.05);
+	}
+
+	&__head {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		margin-bottom: 15px;
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 70px;
+		height: 70px;
+		background: #74c94730;
+		border-radius: 10px;
+	}
+
+	&__tit {
+		color: #172849;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 125%;
+	}
+
+	ul {
+		padding-left: 20px;
+		display: flex;
+		gap: 10px;
+		flex-direction: column;
+
+		color: #172849;
+		font-size: 18px;
+		line-height: 130%;
+	}
+}

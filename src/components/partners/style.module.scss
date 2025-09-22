@@ -1,0 +1,56 @@
+.partners {
+	padding: 70px 0;
+
+	&__title {
+		margin-bottom: 36px;
+	}
+
+	&__slider {
+		position: relative;
+		overflow: hidden;
+		padding: 0 10%;
+
+		@media screen and (max-width: 992px) {
+			padding: 0;
+		}
+	}
+
+	&__item {
+		height: 100%;
+		padding: 16px;
+
+		img {
+			max-height: 80px;
+			width: auto;
+			object-fit: contain;
+		}
+	}
+}
+
+.navBtn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	width: 16px;
+	height: 32px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	z-index: 10;
+
+	background-image: url('/icons/slider-arrow.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
+}
+
+.next {
+	right: 0;
+	left: auto;
+	transform: translateY(-50%) rotate(180deg);
+}

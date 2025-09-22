@@ -1,12 +1,8 @@
 import { v4 as uuid } from 'uuid'
 
-interface Benefit {
-	id: string
-	icon: string
-	text: string
-}
+import type { ListItem } from '@/ui/customlist/customlist.type'
 
-export const BenefitsData: Benefit[] = [
+export const BenefitsData: ListItem[] = [
 	{
 		id: uuid(),
 		icon: '/icons/benefits/benefits-1.svg',

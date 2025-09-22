@@ -1,13 +1,24 @@
-.benefits {
-	padding: 100px 0;
-	background: #fff;
+.interaction {
+	padding: 70px 0;
 
 	@media screen and (max-width: 568px) {
 		padding: 40px 0;
 	}
 
-	&__container {
-		max-width: 1124px;
+	&__title {
+		text-align: left;
+		margin-bottom: 20px;
+	}
+
+	&__description {
+		color: #172849;
+		font-size: 18px;
+		line-height: 130%;
+		margin-bottom: 20px;
+
+		@media screen and (max-width: 568px) {
+			font-size: 16px;
+		}
 	}
 
 	&__inner {
@@ -23,7 +34,7 @@
 
 	.image {
 		width: 100%;
-		max-width: 390px;
+		max-width: 486px;
 
 		img {
 			width: 100%;
@@ -32,7 +43,8 @@
 		}
 	}
 
-	&__list {
-		max-width: 530px;
+	.content {
+		width: 100%;
+		max-width: 590px;
 	}
 }
