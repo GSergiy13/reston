@@ -1,7 +1,7 @@
 import cn from 'clsx'
 import Image from 'next/image'
 
-import { CustomList } from '@/ui/customlist/customlist'
+import { CustomList } from '@/ui/customlist/CustomList'
 
 import { MessagingListData } from './MessagingList.data'
 

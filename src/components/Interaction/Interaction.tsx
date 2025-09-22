@@ -1,7 +1,7 @@
 import cn from 'clsx'
 import Image from 'next/image'
 
-import { CustomList } from '@/ui/customlist/Customlist'
+import { CustomList } from '@/ui/customlist/CustomList'
 
 import { InteractionData } from './Interaction.data'
 

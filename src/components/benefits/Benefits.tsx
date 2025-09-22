@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { CustomList } from '@/ui/customlist/customlist'
+import { CustomList } from '@/ui/customlist/CustomList'
 
 import { BenefitsData } from './benefits.data'
 

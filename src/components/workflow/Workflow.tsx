@@ -1,6 +1,6 @@
 import cn from 'clsx'
 
-import { CustomList } from '@/ui/customlist/customlist'
+import { CustomList } from '@/ui/customlist/CustomList'
 
 import {
 	WorkflowListData_Step1,
