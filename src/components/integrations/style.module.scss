@@ -1,10 +1,18 @@
 .integrations {
 	padding: 70px 0;
 
+	@media screen and (max-width: 768px) {
+		padding: 40px 0;
+	}
+
 	&__title {
 		max-width: inherit;
 		text-align: left;
 		margin-bottom: 44px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__inner {
@@ -16,6 +24,22 @@
 	&__row {
 		display: flex;
 		gap: 20px;
+
+		&:nth-child(1) {
+			@media screen and (max-width: 992px) {
+				flex-direction: column;
+			}
+		}
+
+		&:nth-child(2) {
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			gap: 15px;
+		}
 	}
 
 	&__item {
@@ -38,9 +62,16 @@
 		justify-content: center;
 		align-items: center;
 		width: 70px;
+		min-width: 70px;
 		height: 70px;
 		background: #74c94730;
 		border-radius: 10px;
+
+		@media screen and (max-width: 568px) {
+			width: 60px;
+			min-width: 60px;
+			height: 60px;
+		}
 	}
 
 	&__tit {
@@ -48,6 +79,10 @@
 		font-size: 24px;
 		font-weight: 700;
 		line-height: 125%;
+
+		@media screen and (max-width: 992px) {
+			font-size: 20px;
+		}
 	}
 
 	ul {
@@ -59,5 +94,9 @@
 		color: #172849;
 		font-size: 18px;
 		line-height: 130%;
+
+		@media screen and (max-width: 768px) {
+			font-size: 16px;
+		}
 	}
 }

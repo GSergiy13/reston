@@ -1,10 +1,21 @@
 .advantages {
 	padding: 70px 0;
 
+	@media screen and (max-width: 768px) {
+		padding: 40px 0;
+	}
+
 	&__title {
 		max-width: inherit;
 		text-align: left;
 		margin-bottom: 80px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 40px;
+		}
+		@media screen and (max-width: 568px) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__inner {
@@ -12,15 +23,29 @@
 		flex-direction: column;
 		gap: 80px;
 		margin-bottom: 150px;
+
+		@media screen and (max-width: 992px) {
+			gap: 50px;
+			margin-bottom: 80px;
+		}
 	}
 
 	&__item {
 		display: flex;
+		gap: 40px;
 		justify-content: space-between;
 		align-items: center;
 
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			gap: 30px;
+		}
+
 		&_reverse {
 			flex-direction: row-reverse;
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+			}
 		}
 	}
 
@@ -38,11 +63,20 @@
 			font-weight: 700;
 			line-height: 120%;
 			margin-bottom: 10px;
+
+			@media screen and (max-width: 568px) {
+				font-size: 20px;
+				margin-bottom: 8px;
+			}
 		}
 
 		&__text {
 			font-size: 18px;
 			line-height: 130%;
+
+			@media screen and (max-width: 568px) {
+				font-size: 16px;
+			}
 		}
 	}
 
@@ -59,16 +93,23 @@
 
 	.offer {
 		padding: 30px;
-
 		border-radius: 10px;
 		background: #f3f8ff;
 		box-shadow: 0 10px 32px -4px rgba(24, 39, 75, 0.05);
+
+		@media screen and (max-width: 568px) {
+			padding: 20px;
+		}
 
 		&__title {
 			color: #18191f;
 			font-size: 42px;
 			font-weight: 600;
 			line-height: 100%;
+
+			@media screen and (max-width: 568px) {
+				font-size: 24px;
+			}
 		}
 
 		&__text {
@@ -78,6 +119,10 @@
 			line-height: 140%;
 			margin: 20px 0;
 			max-width: 900px;
+
+			@media screen and (max-width: 568px) {
+				font-size: 16px;
+			}
 		}
 
 		&__accent {

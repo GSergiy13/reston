@@ -1,3 +1,4 @@
+import cn from 'clsx'
 import Image from 'next/image'
 
 import style from './style.module.scss'
@@ -5,7 +6,7 @@ import style from './style.module.scss'
 export const Contact = () => {
 	return (
 		<section className={style.contact}>
-			<div className='container'>
+			<div className={cn('container', style.contact__container)}>
 				<div className={style.contact__inner}>
 					<p className={style.contact__text}>Дізнайтеся як RestOn може допомогти вашому закладу</p>
 
