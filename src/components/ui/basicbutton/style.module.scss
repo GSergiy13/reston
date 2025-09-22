@@ -1,0 +1,15 @@
+.basic-button {
+	padding: 8px 10px;
+	color: #74c947;
+	font-weight: 700;
+	line-height: 125%;
+	border-radius: 5px;
+	border: 1px solid #74c947;
+	background: transparent;
+	cursor: pointer;
+}
+
+.basic-button--filled {
+	background: #74c947;
+	color: #ffffff;
+}

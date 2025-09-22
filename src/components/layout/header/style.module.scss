@@ -1,0 +1,63 @@
+.header {
+	padding: 18px 0;
+	border-bottom: 0.5px solid #d2d2d2;
+	background: #f3f8ff;
+
+	@media screen and (max-width: 768px) {
+		padding: 13px 0;
+	}
+
+	&__inner {
+		display: flex;
+		gap: 20px;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		display: block;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		@media screen and (max-width: 1024px) {
+			width: 120px;
+			height: auto;
+		}
+
+		@media screen and (max-width: 568px) {
+			width: 86px;
+		}
+	}
+
+	&__nav {
+		display: flex;
+		gap: 26px;
+
+		@media screen and (max-width: 1024px) {
+			gap: 16px;
+		}
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__link {
+		font-weight: 600;
+		font-size: 14px;
+		padding: 0 10px;
+		line-height: 120%;
+		text-decoration: none;
+
+		@media screen and (max-width: 1024px) {
+			padding: 0;
+		}
+
+		&.active {
+			color: #2563eb;
+		}
+	}
+}

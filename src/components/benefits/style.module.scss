@@ -1,0 +1,60 @@
+.benefits {
+	padding: 100px 0;
+
+	@media screen and (max-width: 568px) {
+		padding: 40px 0;
+	}
+
+	&__container {
+		max-width: 1124px;
+	}
+
+	&__inner {
+		display: flex;
+		gap: 40px;
+		align-items: center;
+		justify-content: space-between;
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+
+	.image {
+		width: 100%;
+		max-width: 390px;
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+		max-width: 530px;
+	}
+
+	&__item {
+		display: flex;
+		gap: 20px;
+
+		@media screen and (max-width: 568px) {
+			gap: 14px;
+		}
+
+		span {
+			color: #172849;
+			font-size: 22px;
+			font-weight: 600;
+			line-height: 130%;
+
+			@media screen and (max-width: 568px) {
+				font-size: 18px;
+			}
+		}
+	}
+}
