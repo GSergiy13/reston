@@ -5,6 +5,10 @@
 		padding: 40px 0 70px;
 	}
 
+	@media screen and (max-width: 568px) {
+		padding: 40px 0 50px;
+	}
+
 	&__container {
 		padding: 0;
 	}

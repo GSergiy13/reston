@@ -63,7 +63,7 @@
 
 	&__head {
 		display: flex;
-		gap: 10px;
+		gap: 20px;
 		justify-content: space-between;
 		align-items: center;
 		cursor: pointer;
@@ -79,10 +79,21 @@
 	&__body {
 		overflow: hidden;
 		max-height: 0;
-		transition: max-height 0.3s ease;
+		transition: max-height 0.5s ease;
 
 		&_wrapper {
 			padding-top: 15px;
 		}
+	}
+}
+
+.question__body.open {
+	max-height: 500px;
+	transition: max-height 0.5s ease;
+}
+
+.question__arrow.open {
+	&::after {
+		opacity: 0;
 	}
 }

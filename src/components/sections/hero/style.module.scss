@@ -1,9 +1,9 @@
 .hero {
-	padding: 100px 0 92px;
+	padding: 180px 0 92px;
 	background: #eff4fd;
 
 	@media screen and (max-width: 568px) {
-		padding: 20px 0 40px;
+		padding: 85px 0 40px;
 	}
 
 	&__inner {
@@ -32,6 +32,7 @@
 
 		@media screen and (max-width: 568px) {
 			font-size: 45px;
+			padding-right: 10px;
 		}
 	}
 
@@ -87,7 +88,8 @@
 		min-width: 360px;
 
 		@media screen and (max-width: 568px) {
-			min-width: 375px;
+			min-width: 276px;
+			max-width: 276px;
 		}
 
 		img {

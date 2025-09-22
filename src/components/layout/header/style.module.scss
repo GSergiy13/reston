@@ -1,7 +1,12 @@
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 	padding: 18px 0;
 	border-bottom: 0.5px solid #d2d2d2;
 	background: #f3f8ff;
+	z-index: 999;
 
 	@media screen and (max-width: 768px) {
 		padding: 13px 0;
@@ -15,7 +20,9 @@
 	}
 
 	&__logo {
+		position: relative;
 		display: block;
+		z-index: 100;
 
 		img {
 			display: block;
@@ -30,34 +37,6 @@
 
 		@media screen and (max-width: 568px) {
 			width: 86px;
-		}
-	}
-
-	&__nav {
-		display: flex;
-		gap: 26px;
-
-		@media screen and (max-width: 1024px) {
-			gap: 16px;
-		}
-		@media screen and (max-width: 768px) {
-			display: none;
-		}
-	}
-
-	&__link {
-		font-weight: 600;
-		font-size: 14px;
-		padding: 0 10px;
-		line-height: 120%;
-		text-decoration: none;
-
-		@media screen and (max-width: 1024px) {
-			padding: 0;
-		}
-
-		&.active {
-			color: #2563eb;
 		}
 	}
 }

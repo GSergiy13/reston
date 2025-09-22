@@ -1,6 +1,10 @@
 .messaging {
 	padding: 70px 0;
 
+	@media screen and (max-width: 768px) {
+		padding: 40px 0 0;
+	}
+
 	&__title {
 		text-align: left;
 		max-width: initial;
