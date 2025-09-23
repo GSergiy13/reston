@@ -29,6 +29,9 @@ export default function HomeClient() {
 			<Question />
 			<Products />
 			<Contact />
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel necessitatibus, vitae aperiam
+			repellendus sequi modi hic ipsam atque impedit possimus, temporibus voluptate error molestias?
+			Qui repudiandae veritatis minima aliquam?
 		</>
 	)
 }
