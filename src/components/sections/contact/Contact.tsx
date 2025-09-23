@@ -39,6 +39,9 @@ export const Contact = () => {
 									className={style.contact__input}
 									type='tel'
 									placeholder='+38 (___) ___ __ __*'
+									// pattern='[+]{1}[0-9]{2} [(]{1}[0-9]{3}[)]{1} [0-9]{3} [0-9]{2} [0-9]{2}'
+									maxLength={15}
+									minLength={9}
 									required
 								/>
 							</div>
