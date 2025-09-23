@@ -5,7 +5,15 @@ import type { ListItem } from './customlist.type'
 
 import style from './style.module.scss'
 
-export const CustomList = ({ items, small }: { items: ListItem[]; small?: boolean }) => {
+export const CustomList = ({
+	items,
+	small,
+	bold
+}: {
+	items: ListItem[]
+	small?: boolean
+	bold?: boolean
+}) => {
 	return (
 		<ul
 			className={cn(style.customlist__list, {
@@ -16,7 +24,8 @@ export const CustomList = ({ items, small }: { items: ListItem[]; small?: boolea
 				<li
 					key={item.id}
 					className={cn(style.customlist__item, {
-						[style.customlist__item_small]: small
+						[style.customlist__item_small]: small,
+						[style.customlist__item_bold]: bold
 					})}
 				>
 					<Image
