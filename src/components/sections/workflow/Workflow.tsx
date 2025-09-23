@@ -13,7 +13,10 @@ import style from './style.module.scss'
 
 export const Workflow = () => {
 	return (
-		<section className={style.workflow}>
+		<section
+			className={style.workflow}
+			id='how-it-works'
+		>
 			<div className='container'>
 				<h2 className={cn('title', style.workflow__title)}>Як працює чат-бот RestOn AI?</h2>
 

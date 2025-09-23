@@ -4,7 +4,10 @@ import style from './style.module.scss'
 
 export const Opportunities = () => {
 	return (
-		<section className={style.opportunities}>
+		<section
+			className={style.opportunities}
+			id='features'
+		>
 			<div className={cn('container', style.opportunities__container)}>
 				<h2 className={cn('title', style.opportunities__title)}>Можливості (Що вміє RestOn АІ)</h2>
 

@@ -5,7 +5,10 @@ import style from './style.module.scss'
 
 export const Integrations = () => {
 	return (
-		<section className={style.integrations}>
+		<section
+			className={style.integrations}
+			id='integrations'
+		>
 			<div className='container'>
 				<h2 className={cn('title', style.integrations__title)}>Інтеграції</h2>
 

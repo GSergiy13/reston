@@ -5,7 +5,10 @@ import style from './style.module.scss'
 
 export const Advantages = () => {
 	return (
-		<section className={style.advantages}>
+		<section
+			className={style.advantages}
+			id='advantages'
+		>
 			<div className='container'>
 				<h2 className={cn('title', style.advantages__title)}>
 					Переваги використання чат-боту RestOn AI

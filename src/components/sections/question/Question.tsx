@@ -13,7 +13,10 @@ export const Question = () => {
 	}
 
 	return (
-		<section className={cn(style.question)}>
+		<section
+			className={cn(style.question)}
+			id='faq'
+		>
 			<div className='container'>
 				<h2 className={cn('title', style.question__title)}>Поширені запитання про чат-бот AI</h2>
 

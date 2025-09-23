@@ -24,7 +24,7 @@ export const Products = () => {
 						<div className={style.product__info}>
 							<h3 className={style.product__title}>Електронна книга резервів і черга гостей</h3>
 							<Link
-								href='/products/product-1'
+								href='https://reston.ua/vlasnikam-zakladiv/crm'
 								className={style.product__link}
 							>
 								Дізнатися більше
@@ -47,7 +47,7 @@ export const Products = () => {
 								Віджет online-бронювання на ваш сайт, посадкова сторінка в Google чи соц. мережі
 							</h3>
 							<Link
-								href='/products/product-1'
+								href='https://reston.ua/vlasnikam-zakladiv/crm/book-for-reserves'
 								className={style.product__link}
 							>
 								Дізнатися більше
@@ -68,7 +68,7 @@ export const Products = () => {
 						<div className={style.product__info}>
 							<h3 className={style.product__title}>CRM-система для ресторану</h3>
 							<Link
-								href='/products/product-1'
+								href='https://reston.ua/vlasnikam-zakladiv/crm/online-booking'
 								className={style.product__link}
 							>
 								Дізнатися більше

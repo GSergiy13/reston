@@ -5,7 +5,10 @@ import style from './style.module.scss'
 
 export const Contact = () => {
 	return (
-		<section className={style.contact}>
+		<section
+			className={style.contact}
+			id='contact'
+		>
 			<div className={cn('container', style.contact__container)}>
 				<div className={style.contact__inner}>
 					<p className={style.contact__text}>Дізнайтеся як RestOn може допомогти вашому закладу</p>
