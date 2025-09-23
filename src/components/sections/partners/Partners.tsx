@@ -2,9 +2,13 @@
 
 import cn from 'clsx'
 import { useCallback, useRef } from 'react'
-import Slider, { type Settings } from 'react-slick'
-import 'slick-carousel/slick/slick-theme.css'
-import 'slick-carousel/slick/slick.css'
+import type { Swiper as SwiperType } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+import { Autoplay } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 import style from './style.module.scss'
 
@@ -14,40 +18,34 @@ const LOGOS = [
 	{ id: 'bao', src: '/partners/partners-3.png', alt: 'BAO' },
 	{ id: 'fenix', src: '/partners/partners-4.png', alt: 'Fenix' },
 	{ id: 'mimosa', src: '/partners/partners-5.png', alt: 'Mimosa' },
-	{ id: 'sushi', src: '/partners/partners-6.png', alt: 'Sushi' }
+	{ id: 'sushi', src: '/partners/partners-6.png', alt: 'Sushi' },
+	{ id: 'tartine', src: '/partners/partners-7.png', alt: 'Tartine' },
+	{ id: 'veranda', src: '/partners/partners-8.png', alt: 'Veranda' },
+	{ id: 'vineria', src: '/partners/partners-9.png', alt: 'Vineria' },
+	{ id: 'yama', src: '/partners/partners-10.png', alt: 'Yama' },
+	{ id: 'yoshi', src: '/partners/partners-11.png', alt: 'Yoshi' },
+	{ id: 'zhen', src: '/partners/partners-12.png', alt: 'Zhen' },
+	{ id: 'bamboo', src: '/partners/partners-13.png', alt: 'Bamboo' },
+	{ id: 'lotus', src: '/partners/partners-14.png', alt: 'Lotus' },
+	{ id: 'olive', src: '/partners/partners-15.png', alt: 'Olive' },
+	{ id: 'eden', src: '/partners/partners-16.png', alt: 'Eden' },
+	{ id: 'aurora', src: '/partners/partners-17.png', alt: 'Aurora' },
+	{ id: 'luna', src: '/partners/partners-18.png', alt: 'Luna' },
+	{ id: 'terra', src: '/partners/partners-19.png', alt: 'Terra' },
+	{ id: 'cielo', src: '/partners/partners-20.png', alt: 'Cielo' },
+	{ id: 'flora', src: '/partners/partners-21.png', alt: 'Flora' }
 ]
 
 export const Partners = () => {
-	const sliderRef = useRef<Slider | null>(null)
+	const swiperRef = useRef<SwiperType | null>(null)
 
-	const settings: Settings = {
-		arrows: false,
-		dots: false,
-		infinite: true,
-		speed: 500,
-		autoplay: true,
-		autoplaySpeed: 2500,
-		pauseOnHover: true,
-		pauseOnFocus: true,
-		swipeToSlide: true,
-		cssEase: 'ease-in-out',
-		centerMode: true,
-		centerPadding: '0px',
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		adaptiveHeight: false,
-		touchThreshold: 12,
-		responsive: [
-			{ breakpoint: 1280, settings: { slidesToShow: 4 } },
-			{ breakpoint: 1024, settings: { slidesToShow: 3 } },
-			{ breakpoint: 768, settings: { slidesToShow: 2 } },
-			{ breakpoint: 480, settings: { slidesToShow: 2 } }
-		],
-		accessibility: true
-	}
+	const handlePrev = useCallback(() => {
+		swiperRef.current?.slidePrev()
+	}, [])
 
-	const handlePrev = useCallback(() => sliderRef.current?.slickPrev(), [])
-	const handleNext = useCallback(() => sliderRef.current?.slickNext(), [])
+	const handleNext = useCallback(() => {
+		swiperRef.current?.slideNext()
+	}, [])
 
 	return (
 		<section className={style.partners}>
@@ -68,25 +66,43 @@ export const Partners = () => {
 						aria-label='Попередній'
 					></button>
 
-					<Slider
-						ref={sliderRef}
-						{...settings}
+					<Swiper
+						modules={[Autoplay]}
+						autoplay={{ delay: 2500, disableOnInteraction: false }}
+						loop
+						spaceBetween={50}
+						slidesPerView={4}
+						breakpoints={{
+							320: {
+								slidesPerView: 2,
+								spaceBetween: 20
+							},
+							768: {
+								slidesPerView: 3,
+								spaceBetween: 30
+							},
+							1024: {
+								slidesPerView: 4,
+								spaceBetween: 50
+							}
+						}}
+						onSwiper={swiper => {
+							swiperRef.current = swiper
+						}}
 					>
 						{LOGOS.map(logo => (
-							<div
+							<SwiperSlide
 								key={logo.id}
 								className={style.partners__item}
 							>
 								<img
 									src={logo.src}
 									alt={logo.alt}
-									loading='lazy'
-									decoding='async'
 									draggable={false}
 								/>
-							</div>
+							</SwiperSlide>
 						))}
-					</Slider>
+					</Swiper>
 
 					<button
 						type='button'

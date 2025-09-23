@@ -8,6 +8,7 @@ import { Hero } from 'components/sections/hero/Hero'
 import { Integrations } from 'components/sections/integrations/Integrations'
 import { Messaging } from 'components/sections/messaging/Messaging'
 import { Opportunities } from 'components/sections/opportunities/Opportunities'
+import { Partners } from 'components/sections/partners/Partners'
 import { Products } from 'components/sections/products/Products'
 import { Question } from 'components/sections/question/Question'
 import { Requests } from 'components/sections/requests/Requests'
@@ -19,7 +20,7 @@ export default function HomeClient() {
 			<Hero />
 			<Benefits />
 			<Requests />
-			{/* <Partners /> */}
+			<Partners />
 			<Messaging />
 			<Workflow />
 			<Interaction />

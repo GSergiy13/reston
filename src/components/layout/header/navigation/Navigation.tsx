@@ -26,6 +26,12 @@ export const Navigation = () => {
 
 	const toggleMenu = () => {
 		setIsMenuActive(prev => !prev)
+
+		if (!isMenuActive) {
+			document.documentElement.style.overflow = 'hidden' // <html>
+		} else {
+			document.documentElement.style.overflow = 'auto' // <html>
+		}
 	}
 
 	const handleNavigationClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
