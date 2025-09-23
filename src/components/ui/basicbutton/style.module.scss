@@ -8,9 +8,21 @@
 	border: 1px solid #74c947;
 	background: transparent;
 	cursor: pointer;
+
+	transition: all 0.3s ease;
+
+	&:hover {
+		background: #74c947;
+		color: #ffffff;
+	}
 }
 
 .basic-button--filled {
 	background: #74c947;
 	color: #ffffff;
+
+	&:hover {
+		background: transparent;
+		color: #74c947;
+	}
 }
