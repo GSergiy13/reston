@@ -20,7 +20,12 @@ export const Benefits = () => {
 						/>
 					</div>
 
-					{BenefitsData && <CustomList items={BenefitsData} />}
+					{BenefitsData && (
+						<CustomList
+							items={BenefitsData}
+							bold
+						/>
+					)}
 				</div>
 			</div>
 		</section>
