@@ -18,7 +18,7 @@ export const Contact = () => {
 		e.preventDefault()
 
 		if (!email || !email.includes('@') || tel.length < 10) {
-			alert('Заповніть всі поля')
+			toast.error('Будь ласка, перевірте правильність введених даних', toastStyle)
 			return
 		}
 

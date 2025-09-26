@@ -13,7 +13,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 			{/* <Footer /> */}
 
 			<Toaster
-				position='top-right'
+				position='bottom-right'
 				reverseOrder={false}
 				toastOptions={{
 					error: {
